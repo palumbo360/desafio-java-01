@@ -1,0 +1,57 @@
+let integrantes = prompt("INGRESE NUMORO DE PERSONAS QUE VIVEN EN LA MISMA CASA")
+
+
+
+for(let i = 1; i <= integrantes; i++){
+
+let nombre = prompt("INGRESE SU NOMBRE")
+let apellido = prompt("INGRESE SU APELLIDO")
+
+
+if (nombre == "") {
+  alert ("NO INGRESASTE NOMBRE")
+}
+
+if (apellido == "") {
+  alert ("NO INGRESASTE APELLIDO")
+}
+
+else {
+  alert(`ingresaste ${nombre} ${apellido}`)
+}
+
+let altura = prompt("INGRESE SU ALTURA EN Mts ejemplo : 1.75")
+let peso = prompt("INGRESE SU PESO EN KG")
+
+if (altura == "") {
+  alert ("NO INGRESASTE ALTURA")
+}
+
+if (peso == "") {
+  alert ("NO INGRESASTE PESO")
+}
+else {
+  alert(`INGRESASTE ${altura}Mts de altura y ${peso}kg de peso`)
+}
+
+
+let imc = (peso / (Math.pow(altura,2)));
+console.log (imc)
+
+if (imc <= 18.5) {
+  alert ("su peso es Peso inferior al normal")
+}
+else if (imc <= 24.9) {
+  alert ("su peso es normal")
+}
+else if (imc <= 29.9) {
+  alert ("su peso es superior al normal")
+}
+else if (imc > 29.9) {
+  alert ("su peso se considera obesidad")
+}
+}
+
+
+
+
