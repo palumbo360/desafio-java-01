@@ -1,4 +1,4 @@
-let integrantes = prompt("INGRESE NUMORO DE PERSONAS QUE VIVEN EN LA MISMA CASA")
+let integrantes = prompt("INGRESE NUMERO DE PERSONAS QUE VIVEN EN LA MISMA CASA")
 
 
 
