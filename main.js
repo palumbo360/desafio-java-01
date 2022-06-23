@@ -1,8 +1,14 @@
 let integrantes = prompt("INGRESE NUMERO DE PERSONAS QUE VIVEN EN LA MISMA CASA")
 
+let imcTotal = 0
 
 
 for(let i = 1; i <= integrantes; i++){
+
+  if (i >= 6){
+    alert("AS ALCANZADO EL NUMERO MAXIMO DE INTEGRANTES")
+    break
+   }
 
 let nombre = prompt("INGRESE SU NOMBRE")
 let apellido = prompt("INGRESE SU APELLIDO")
@@ -35,7 +41,7 @@ else {
 }
 
 
-let imc = (peso / (Math.pow(altura,2)));
+let imc = (peso / (Math.pow(altura,2)))
 console.log (imc)
 
 if (imc <= 18.5) {
@@ -50,6 +56,24 @@ else if (imc <= 29.9) {
 else if (imc > 29.9) {
   alert ("su peso se considera obesidad")
 }
+
+imcTotal = imcTotal + imc
+}
+
+promedioImc = imcTotal / integrantes
+console.log (promedioImc)
+
+if (promedioImc <= 18.5) {
+  alert ("su peso familiares Peso inferior al normal")
+}
+else if (promedioImc <= 24.9) {
+  alert ("su peso familiares normal")
+}
+else if (promedioImc <= 29.9) {
+  alert ("su peso familiares superior al normal")
+}
+else if (promedioImc > 29.9) {
+  alert ("su peso familiarse se considera obesidad")
 }
 
 
